@@ -42,10 +42,16 @@ const goalAnalyzing = async () => {
       model: "stepfun/step-3.5-flash:free",
       messages: [
         {
+          role: "system",
+          content:
+            "You are expert in goal analyzing and planning. You will help me to plan my goal.",
+        },
+        {
           role: "user",
           content: prompt,
         },
       ],
+      temperature: 0.7,
     });
 
     console.log(`content: ${completion?.choices[0]?.message.content}`);

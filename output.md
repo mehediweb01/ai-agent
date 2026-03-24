@@ -1,34 +1,34 @@
 ```json
 {
-  "name": "7-Day JavaScript Crash Course",
-  "days": "7",
+  "name": "Learn JavaScript in 7 Days",
+  "days": "7 days",
   "concepts": [
-    "Introduction to JavaScript, variables (var, let, const), data types",
-    "Operators, type conversion, debugging with console",
-    "Control flow: if/else, switch, loops (for, while)",
-    "Functions: defining, parameters, return statements",
-    "Arrays: creation, methods (push, pop, slice), iteration with forEach, map",
-    "Objects: creation, properties, methods, understanding 'this'",
-    "DOM manipulation: selecting elements, event listeners, simple interactivity"
+    "Day 1: JavaScript Syntax, Variables, Data Types, Basic Operators",
+    "Day 2: Functions, Control Flow (if/else, switch), Loops (for, while)",
+    "Day 3: Arrays & Array Methods, Objects & Object Properties",
+    "Day 4: DOM Manipulation (selecting elements, changing content/styles)",
+    "Day 5: Event Handling (click, input, submit), Form Validation",
+    "Day 6: Asynchronous JavaScript (callbacks, promises, fetch API)",
+    "Day 7: ES6+ Features (arrow functions, destructuring, modules), Debugging & Final Project"
   ],
   "dailyTasks": [
-    "Write your first script in the browser console. Declare and log variables of different types (string, number, boolean).",
-    "Practice arithmetic and logical operators. Convert between types (e.g., string to number). Intentionally create an error and use console.log to debug.",
-    "Implement a number guessing game using if/else. Write a for loop to print numbers 1 to 10 and a while loop for a countdown.",
-    "Create a function that greets a user by name. Build a function that returns the maximum of two numbers. Test with various inputs.",
-    "Create an array of fruits and use push/pop to modify it. Use forEach to log each item and map to create a new array with uppercase names.",
-    "Define an object for a book with title, author, and a method to display details. Use 'this' to reference object properties in methods.",
-    "Build a webpage with a button that changes background color and an input that updates a paragraph in real-time. Include an event listener for click and input events."
+    "Day 1: Set up environment (browser console or VS Code), declare variables (let/const), practice data types, write simple calculations and string operations.",
+    "Day 2: Write functions with parameters/return values, implement if/else logic, build loops to iterate through numbers or arrays.",
+    "Day 3: Create and manipulate arrays (push, pop, map, filter), define objects with key-value pairs, access/modify object properties.",
+    "Day 4: Use document.getElementById/querySelector, change innerHTML/textContent, modify CSS classes/styles dynamically.",
+    "Day 5: Add event listeners to buttons/inputs, handle form submissions, create interactive elements like a click counter or simple validator.",
+    "Day 6: Use fetch() to get data from a public API (e.g., JSONPlaceholder), handle promises with .then() or async/await, display fetched data on the page.",
+    "Day 7: Refactor old code with ES6+ syntax, use Chrome DevTools to debug, build a small integrated project (e.g., weather app, to-do list with local storage)."
   ],
   "challenge": [
-    "Using prompt(), ask for the user's name and age, and log a message like 'Hello [name], you are [age] years old.' Handle invalid input gracefully.",
-    "Create a loop that asks the user to guess a secret number (e.g., 7) until correct, giving hints if the guess is too high or too low using if/else.",
-    "Write a recursive function for factorial (n!) and compare it with a loop-based version. Test with numbers like 5 and 0.",
-    "Build a grade calculator function that takes a numeric score (0-100) and returns a letter grade (A: 90-100, B: 80-89, etc.). Include validation for invalid scores.",
-    "Given an array of numbers, write a function that returns only the even numbers using filter(). Then, use map() to double each even number.",
-    "Create a 'student' object with name and an array of grades. Add a method to calculate the average grade. Test with sample data and log the result.",
-    "Make a simple to-do list app where you can add items via an input and button, and mark items as done with a click (apply strikethrough style). Use DOMContentLoaded event to initialize."
+    "Day 1: Build a simple calculator that adds/subtracts two numbers.",
+    "Day 2: Create a number guessing game where the user inputs a number and gets feedback (higher/lower).",
+    "Day 3: Build a 'Task Manager' that stores tasks in an array and can add/remove them (console-based).",
+    "Day 4: Turn the Task Manager into a DOM-based app with add/delete buttons and list display.",
+    "Day 5: Enhance the Task Manager with form validation (no empty tasks) and edit functionality.",
+    "Day 6: Fetch random user data from an API and display user profiles (name, email, avatar) on the page.",
+    "Day 7: Combine all concepts: Build a weather app that fetches data from an API, displays temperature/conditions, and allows city search (use free API like OpenWeatherMap)."
   ],
-  "motivation": "JavaScript powers the dynamic web—from interactive sites to server-side apps. Embrace the learning curve: code daily, build small projects, and don't fear errors—they're your teachers. Use resources like MDN Web Docs and freeCodeCamp. In 7 days, you'll have a solid foundation to explore more. Keep pushing, and enjoy the creativity coding brings!"
+  "motivation": "JavaScript is the language of the web—mastering it unlocks front-end, back-end (Node.js), and mobile development. In 7 days, you'll build a strong foundation by coding daily. Embrace errors as learning opportunities, use resources like MDN and freeCodeCamp, and focus on understanding concepts over memorization. Consistency is key: code every day, even if only for 30 minutes. By Day 7, you'll have tangible projects to showcase your progress!"
 }
 ```
