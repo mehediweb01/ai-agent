@@ -1,4 +1,7 @@
+import dotenv from "dotenv";
 import OpenAI from "openai";
+
+dotenv.config();
 
 const openai = new OpenAI({
   baseURL: "https://openrouter.ai/api/v1",
@@ -18,4 +21,37 @@ async function main() {
 
   console.log(`content: ${completion?.choices[0]?.message.content}`);
 }
-main();
+
+const goalAnalyzing = async () => {
+  const goalText = "Learn JavaScript";
+  const goalDays = 7;
+
+  try {
+    const prompt = `I want to learn ${goalText} in ${goalDays} days. What should I do? return to JSON format. example here: 
+      {
+        "name" : "....",
+        "days": "....",
+        "concepts": ["day1", "day2", "day3"],
+        "dailyTasks": ["day1", "day2","day3"],
+        "challenge": ["day1", "day2", "day3"],
+        "motivation": "...."
+      }
+    `;
+
+    const completion = await openai.chat.completions.create({
+      model: "stepfun/step-3.5-flash:free",
+      messages: [
+        {
+          role: "user",
+          content: prompt,
+        },
+      ],
+    });
+
+    console.log(`content: ${completion?.choices[0]?.message.content}`);
+  } catch (err) {
+    console.error(err);
+  }
+};
+
+goalAnalyzing();
